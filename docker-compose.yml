@@ -1,9 +1,7 @@
-version: '3'
 services:
   bot:
     build: .
     environment:
-      - TELEGRAM_BOT_TOKEN=<ваш_токен>
+      - TELEGRAM_BOT_TOKEN=your_bot_token
     volumes:
-      - ./data:/app/data
-    restart: always
+      - ./data:/app/employees.db  # это сохранит базу данных
